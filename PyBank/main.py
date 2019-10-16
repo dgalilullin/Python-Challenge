@@ -1,2 +1,4 @@
-csv_path = "Resources/budget_data.csv"
-main_df = read_csv(csv_path)
+import os
+import csv
+csv_path = os.path.join("..","Resources","budget_data.csv")
+with open (csv_path, newline="") as csvfile:
